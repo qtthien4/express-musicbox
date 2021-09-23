@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./signup.css">
+    <script src="https://kit.fontawesome.com/2c7a5ced39.js" crossorigin="anonymous"></script>
+    <title>Login</title>
+</head>
+
+<body>
+    <div>
+        <div class="header">
+            <div class="left">
+                <img src="../image/logo.png" alt="">
+            </div>
+            <div class="middle">
+                <a href="#">Download</a>
+                <a href="#">Help</a>
+            </div>
+            <div class="right">
+                <a href="./login" class="rgt-item-1">Log in</a>
+                <a href="#" class="rgt-item-2">Sign up</a>
+            </div>
+        </div>
+        <div class="container">
+            <form method="POST" action="" class="box-sign-in">
+                <div>
+                    <h2>Ready to sign up?</h2>
+                    <div class="icon">
+                        <div class="icon-fb">
+                            <i class="fab fa-facebook"></i>
+                            <a href="#">Facebook</a>
+                        </div>
+                        <div class="icon-gg">
+                            <i class="fab fa-google"></i>
+                            <a href="#">Google</a>
+                        </div>
+                    </div>
+                    <p style="margin: 2px; color:black" >Email address or username</p>
+                    <input type="email" class="input">
+
+                    <p style="margin: 2px; color:black"> Password </p>
+                    <input type="password" class="input">
+
+                    <p style="margin: 2px; color:black">Username</p>
+                    <input type="text" placeholder="Enter Username" class="input"><br>
+
+                    <input type="date" style="margin: 20px 20px 0;" value="2021-07-22" min="2005-01-01">
+
+                    <select id="Gender" style="font-size: 15px;">
+                        <option value="none" selected>Gender</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>                        
+                      </select><br>
+
+                    <p style="font-size: 12px;text-align: center; margin-top: 30px; color:black">By clicking on "Sign up", you accept the <br> <a href="#" style="color: #2D9BEF; text-decoration: none;">Terms and Conditions of Use.</a></p>
+
+                    <div class="signup">
+                        <input id="signup" type="submit" value="SIGN UP" style="text-align: center;">
+                    </div>
+
+                    <p style="font-size: 12px;text-align: center; margin: 20px; color:black">Already have an account?<a style="text-decoration: none; color:#2D9BEF; "href="./login">Log in</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,221 @@
+body {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: white;
+    background-color: black;
+}
+
+.navbar {
+    width: 100%;
+    background-color: black;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    display: flex;
+    margin: 20px 0;
+}
+
+.item-nav {
+    display: flex;
+}
+
+.menu-mobile {
+    display: none;
+}
+
+#logo-web {
+    display: block;
+    margin: 17px;
+    height: 40px;
+    width: 105px;
+    background-image: url(../img/logo.png);
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 995px) {
+    .item-nav {
+        display: none;
+        flex-direction: column;
+    }
+    .navbar {
+        display: block;
+    }
+    .item-left-nav {
+        display: grid;
+    }
+}
+
+@media screen and (max-width: 995px) {
+    .item-nav .responsive {
+        position: relative;
+    }
+    .menu-mobile {
+        display: block;
+        font-size: 20px;
+        position: absolute;
+        right: 20px;
+        top: 0;
+    }
+}
+
+.left-nav ul li a {
+    padding: 5px 25px;
+    color: white;
+    text-decoration: none;
+}
+
+.left-nav {
+    display: block;
+}
+
+.item-left-nav {
+    display: inline-block;
+    padding: 20px;
+    /* position: relative; */
+}
+
+.item-left-nav a {
+    color: black;
+    text-decoration: none;
+}
+
+.item-left-nav:hover::after {
+    content: "";
+    border-radius: 50%;
+    background-color: #2DAFEF;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 80%;
+    left: 45%
+}
+
+#browse {
+    border: 2px solid;
+    box-sizing: border-box;
+    border-radius: 25px;
+    color: #2DAFEF;
+}
+
+.right-nav {
+    margin-top: 10px;
+    border-radius: 20px;
+}
+
+#search {
+    border: 1px solid;
+    border-radius: 20px;
+    padding: 7px 50px;
+}
+
+.icon-search::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f002";
+    padding-right: 3px;
+    font-weight: 900;
+    color: black;
+    position: absolute;
+    padding: 7px 8px;
+    color: white;
+}
+
+.search,
+.search:focus {
+    height: 31px;
+    padding-left: 30px;
+    border-radius: 20px;
+    outline: none;
+    background-color: #898B91;
+    color: white;
+    border: #898B91;
+}
+
+.search::placeholder {
+    color: white;
+}
+
+.icon-user {
+    font-size: 35px;
+    padding-left: 40px;
+}
+
+.right-nav {
+    display: flex;
+    padding: 0px;
+    margin: 10px 0;
+    align-items: center;
+    justify-content: center;
+}
+
+#login {
+    padding: 10px 10px;
+    FONT-SIZE: 17px;
+    text-decoration: none;
+    color: white;
+    position: relative;
+}
+
+#login a {
+    text-decoration: none;
+    color: white;
+}
+
+.dropdown-content a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 5px 5px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 2;
+}
+
+.img-flow {
+    clear: both;
+}
+
+.img-flow img {
+    margin: 0 10px;
+    width: 375px;
+    height: auto;
+}
+
+.container {
+    display: flex;
+    clear: both;
+}
+
+#picture {
+    width: 172px;
+    height: auto;
+}
+
+.picture-box {
+    margin: 0 14px;
+}
+
+.title-right {
+    float: right;
+    margin: 16px 0;
+    color: white;
+    text-decoration: none;
+}
+
+.title-left {
+    float: left;
+}
+
+#picture-radius {
+    width: 172px;
+    height: auto;
+    border-radius: 50%;
+}
+
+#namesong-released a {
+    display: block;
+    color: white;
+    text-decoration: none;
+}
