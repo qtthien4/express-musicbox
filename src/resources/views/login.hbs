@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./login.css">
     <script src="https://kit.fontawesome.com/2c7a5ced39.js" crossorigin="anonymous"></script>
     <title>Login</title>
 </head>
@@ -14,7 +13,7 @@
     <div>
         <div class="header">
             <div class="left">
-                <img src="../image/logo.png" alt="">
+                <img src="./img/logo.png" alt="">
             </div>
             <div class="middle">
                 <a href="#">Download</a>
@@ -26,7 +25,7 @@
             </div>
         </div>
         <div class="container">
-            <form method="POST" action="" class="box-sign-in">
+            <form method="POST"  class="box-sign-in">
                 <div>
                     <h2>What will you listen to today?</h2>
                     <div class="icon">
@@ -50,9 +49,9 @@
 
                     <div class="err">
                         {{#if err}}
-                        {{#each people}}
+                        {{#each err}}
                         <div>
-                            <p style="color: red;"> loi kia</p>
+                            <p style="color: red;"> {{this}}</p>
                         </div>
                          {{/each}}
                         {{/if}}

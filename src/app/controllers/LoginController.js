@@ -6,12 +6,32 @@ class LoginController {
     }
 
     postLogin(req, res, next) {
-        const email = res.body.email;
-        const pass = res.body.password;
+        let emails = req.body.email;
+        let password = req.body.password;
 
-        // users.find({}, function(req, res) => {
-
-        // })
+        var user = users.find({
+                user: emails,
+                pass: password
+            }, (err, a) => {
+                if (a.length == 0) {
+                    res.render('login', {
+                        err: ['sai r thang ga'],
+                        css: 'login.css'
+                    });
+                } else if (a.length != 0) {
+                    res.redirect('/home');
+                    console.log('m khong ngu');
+                }
+            })
+            // users.find({}, function(err, users) {
+            //     if(!err)
+            //     {
+            //         res.json(users)
+            //     }
+            //     else{
+            //         res.status(400).json(  {error : 'err'});
+            //     }
+            // })
     }
 }
 

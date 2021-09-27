@@ -39,18 +39,29 @@
                             <a href="#">Google</a>
                         </div>
                     </div>
+
+                    <div class="err">
+                        {{#if err}}
+                        {{#each err}}
+                        <div>
+                            <p style="color: red;"> {{this}}</p>
+                        </div>
+                         {{/each}}
+                        {{/if}}
+                    </div>
+                    
                     <p style="margin: 2px; color:black" >Email address or username</p>
-                    <input type="email" class="input">
+                    <input type="email" class="input" name="email">
 
                     <p style="margin: 2px; color:black"> Password </p>
-                    <input type="password" class="input">
+                    <input type="password" class="input" name="pass">
 
                     <p style="margin: 2px; color:black">Username</p>
-                    <input type="text" placeholder="Enter Username" class="input"><br>
+                    <input type="text" placeholder="Enter Username" class="input" name="user"><br>
 
-                    <input type="date" style="margin: 20px 20px 0;" value="2021-07-22" min="2005-01-01">
+                    <input name="date" type="date" style="margin: 20px 20px 0;" value="2021-07-22" min="2005-01-01">
 
-                    <select id="Gender" style="font-size: 15px;">
+                    <select name="gender" id="Gender" style="font-size: 15px;">
                         <option value="none" selected>Gender</option>
                         <option value="Male">Male</option>
                         <option value="Female">Female</option>                        
